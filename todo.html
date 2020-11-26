@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TO DO LIST</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">              
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body onload="myFunction()">
+    <nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color:black" >
+        <ul class="navbar-nav"  >
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="button1" style="color:white ;font-weight: 400;">To-Do List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color:white ;font-weight: 400;">Log-Out</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <!-- animation -->
+    <div id="loader"></div><div class="pic"> </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!-- content -->
+       <!-- <button id="button1">Retrieve the List</button>-->
+       
+        <div class="table-responsive">
+            <h1 id="head">
+                <span style="color:#4285f4">T</span> 
+                <span style="color:#ea4335 ">O</span>&nbsp;
+                <span style="color: #fbbc05">D</span>
+                <span style="color:#34a853">O</span>&nbsp;
+                <span style="color: #fbbc05">L</span>
+                <span style="color:#4285f4">I</span>
+                <span style="color:#ea4335">S</span>
+                <span style="color:#34a853">T</span>
+            </h1>
+            <br />
+            <table class="table table-bordered table-hover">
+                <thead><tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Check</th>
+                </tr></thead>
+                <tbody id="myTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+
+</html>
